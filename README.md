@@ -1,6 +1,7 @@
 # CS601 Final Project
 
-This webpage is an autobiography of Jahnuel Dorelus.
+This webpage is an autobiography of Jahnuel Dorelus. This is a summary of some of the interesting things about my
+educational and personal life.
 
 ## Authors
 
