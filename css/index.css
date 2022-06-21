@@ -1,0 +1,213 @@
+/* Colors */
+:root {
+  --color-primary: #1d3557;
+  --color-secondary: #457b9d;
+  --color-tertiary: #a8dadc;
+  --color-quaternary: #f1faee;
+  --color-quinary: #f6f6f3;
+  --color-quinary: #f6f6f3;
+  --color-light-gray: #eeeee8;
+
+  --default-border-radius: 4px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body #app {
+  border: none;
+  padding: 0rem;
+}
+
+/* All content main parent container width size */
+.app-container-width {
+  width: 60%;
+}
+
+.body-main-content {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0rem;
+}
+
+/**
+  * HEADER STYLES
+  */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-primary);
+}
+
+header nav {
+  width: 100%;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0rem;
+  padding: 0rem;
+  list-style-type: none;
+}
+
+header nav ul li h3 {
+  color: var(--color-quinary);
+  margin: 0.7rem 1rem;
+}
+
+header nav ul li h3:hover {
+  color: var(--color-tertiary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/**
+  * MAIN CONTENT STYLES
+  */
+
+main div {
+  background-color: var(--color-quaternary);
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+main div h2,
+main div h3,
+main div ul li {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+}
+
+main div a {
+  color: var(--color-primary);
+  border-radius: var(--default-border-radius);
+}
+
+main div p {
+  color: var(--color-secondary);
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+main div img {
+  background-color: black;
+  border-radius: var(--default-border-radius);
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+main div audio {
+  margin-top: 1rem;
+}
+
+main div table {
+  background-color: var(--color-tertiary);
+  margin-top: 2rem;
+  margin-right: 2rem;
+  border-radius: var(--default-border-radius);
+  border: 1px solid var(--color-primary);
+  border-spacing: 0rem;
+}
+
+main div table thead {
+  background-color: var(--color-primary);
+  color: var(--color-quaternary);
+}
+
+main div table tbody tr {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+main div table tbody tr:hover {
+  background-color: var(--color-quaternary);
+}
+
+main div table tbody tr:last-child {
+  border-bottom: none;
+}
+
+main div table thead tr th,
+main div table tbody tr td {
+  text-align: start;
+}
+
+main div table thead tr th {
+  padding: 0.3rem 0.5rem;
+}
+
+main div table tbody tr td {
+  padding: 0.2rem 0.5rem;
+  color: var(--color-primary);
+}
+
+footer {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+}
+
+footer div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0.8rem 0.5rem;
+}
+
+footer div p,
+footer div a {
+  color: var(--color-quinary);
+  margin: 0.2rem 0.5rem;
+}
+
+footer div a:hover {
+  color: var(--color-tertiary);
+  text-decoration: underline;
+}
+
+/**
+  * MEDIA QUERIES FOR WIDTH OF ALL CONTENT ON PAGE
+  */
+@media screen and (max-width: 766px) {
+  .app-container-width {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .app-container-width {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .app-container-width {
+    width: 80%;
+  }
+
+  header nav ul {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .app-container-width {
+    width: 85%;
+  }
+
+  header nav ul {
+    display: block;
+  }
+}
